@@ -38,6 +38,10 @@ const question2 = () => {
   const todoListUl = document.getElementById("todo-list");
 
   function addElement() {
+    if (taskName.value.trim().length === 0) {
+      return;
+    }
+
     const newbullet = document.createElement("li");
     const newtodo = document.createTextNode(taskName.value);
     newbullet.appendChild(newtodo);
