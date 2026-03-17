@@ -1,0 +1,427 @@
+/* Taken from Rohan  */
+body, html {
+    height: 100%;
+    margin: 0;
+    width:100%
+}
+
+.pfp {
+    background-color: #ddd;
+    border-radius: 50%;
+    display: block;
+    height: 128px;
+    margin: 40px auto 20px;
+    object-fit: cover;
+    width:128px
+}
+
+.name {
+    font-size: 48px;
+    letter-spacing: -.769231px;
+    line-height: 48.3333px;
+    margin:0
+}
+
+.name, .subtitle {
+    font-family: poppins;
+    text-align:center
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    padding-left: 1em;
+    padding-right:1em
+}
+
+.contactButton {
+    background-color: #3a7685;
+    border: 0;
+    border-radius: 100px;
+    color: #fafafa;
+    cursor: pointer;
+    display: block;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height: 58px;
+    padding: 16px 32px;
+    width:228px
+}
+
+.contactButton, .contactButton:active {
+    transition-duration: .3s;
+    transition-timing-function:ease-in
+}
+
+.contactButton:active {
+    background-color: #346a78 !important;
+    color:#fff !important
+}
+
+.contactButton:hover {
+    background-color: #2b5964;
+    color:#fff
+}
+
+.contactButton:hover, .projectsButton {
+    transition-duration: .3s;
+    transition-timing-function:ease-in
+}
+
+.projectsButton {
+    background-color: #0b2e82;
+    border: 0;
+    border-radius: 100px;
+    box-shadow: 5px 4px 26px 1px rgba(0, 0, 0, .24);
+    color: #fafafa;
+    cursor: pointer;
+    display: block;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height: 58px;
+    padding: 16px 32px;
+    width:228px
+}
+
+.projectsButton:active {
+    background-color: #2f22a1 !important;
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, .24);
+    color: #fff !important;
+    -webkit-transform: scale(.98);
+    transform: scale(.98);
+    transition-timing-function:ease-in
+}
+
+.projectsButton:hover {
+    background-color: #180d7a;
+    color: #fff;
+    transition-timing-function:ease-in
+}
+
+.projectsHeader {
+    background-color: transparent;
+    font-family: poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -.673077px;
+    line-height: 42.2917px;
+    padding-top: 2rem;
+    text-align:center
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 45rem;
+    padding-left: 1.5rem;
+    padding-right:1.5rem
+}
+
+.projectContainer {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid hsla(0, 1%, 39%, .15);
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, .02);
+    cursor: pointer;
+    display: flex;
+    gap: 2rem;
+    padding:25px
+}
+
+.projectContainer:hover {
+    border-color: hsla(0, 1%, 39%, .5);
+    transition-duration: .2s;
+    transition-timing-function:ease-in
+}
+
+.projectContainer:not(:hover) {
+    border-color: hsla(0, 1%, 39%, .15);
+    transition-duration: .1s;
+    transition-timing-function:ease-in
+}
+
+.projectContainer:active {
+    border-color:hsla(0, 2%, 61%, .5)
+}
+
+.logo {
+    max-width:55px
+}
+
+.projectTitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 5px;
+    top:-9px
+}
+
+.projectDescription, .projectTitle {
+    background-color: transparent;
+    font-family: poppins;
+    font-style: normal;
+    letter-spacing: 0;
+    margin:unset
+}
+
+.projectDescription {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20.25px;
+    padding:5px 5px 15px
+}
+
+.projectLanguage {
+    background-color: transparent;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 15.75px;
+    padding:5px
+}
+
+.githubButton, .projectLanguage {
+    font-family: poppins;
+    margin: unset;
+    top:-9px
+}
+
+.githubButton {
+    background-color: #232323;
+    border: 0;
+    border-radius: 100px;
+    box-shadow: 5px 4px 26px 1px rgba(0, 0, 0, .24);
+    color: #fafafa;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    min-height: 58px;
+    padding: 16px 32px;
+    width:228px
+}
+
+.githubButton, .githubButton:active {
+    transition-duration: .3s;
+    transition-timing-function:ease-in
+}
+
+.githubButton:active {
+    background-color: #232323 !important;
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, .24);
+    color:#fff !important
+}
+
+.githubButton:hover {
+    background-color: #000;
+    color: #fff;
+    transition-duration: .3s;
+    transition-timing-function:ease-in
+}
+
+.homePage {
+    height: 100vh;
+    overflow-y: hidden;
+    padding-bottom:10vh
+}
+
+.homePage, .projectsPage {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    width:100vw
+}
+
+.projectsPage {
+    padding-bottom:3.5rem
+}
+
+.homeButtons {
+    display: flex;
+    gap:1em
+}
+
+@media (max-width: 800px) {
+    .homeButtons {
+        flex-direction: column-reverse;
+        gap:0
+    }
+}
+
+.backButton {
+    cursor: pointer;
+    left: 0;
+    padding: 1em;
+    position: absolute;
+    top:0
+}
+
+.socials {
+    display: flex;
+    gap: 2em;
+    margin-top:1.5em
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 100;
+    src: local("Poppins Thin "), local("Poppins-Thin"), url(/static/media/poppins-latin-100.ab66112cac2ca46d6cf8.woff2) format("woff2"), url(/static/media/poppins-latin-100.9eef15e6adb5c1840e4b.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 100;
+    src: local("Poppins Thin italic"), local("Poppins-Thinitalic"), url(/static/media/poppins-latin-100italic.16e9e4a7edd1deb307b6.woff2) format("woff2"), url(/static/media/poppins-latin-100italic.4eb0979cc92f081697d9.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    src: local("Poppins Extra Light "), local("Poppins-Extra Light"), url(/static/media/poppins-latin-200.7f0cadcc9081ce094690.woff2) format("woff2"), url(/static/media/poppins-latin-200.6661712e99d1f44c5696.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 200;
+    src: local("Poppins Extra Light italic"), local("Poppins-Extra Lightitalic"), url(/static/media/poppins-latin-200italic.d1d463232bc816f6fdff.woff2) format("woff2"), url(/static/media/poppins-latin-200italic.b12214af6124a2b0f2e6.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    src: local("Poppins Light "), local("Poppins-Light"), url(/static/media/poppins-latin-300.82a53579cedb4011592d.woff2) format("woff2"), url(/static/media/poppins-latin-300.8583fb076895d267edef.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 300;
+    src: local("Poppins Light italic"), local("Poppins-Lightitalic"), url(/static/media/poppins-latin-300italic.e62b386ee4c170e8982d.woff2) format("woff2"), url(/static/media/poppins-latin-300italic.aea0270e651bfbf3428e.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Poppins Regular "), local("Poppins-Regular"), url(/static/media/poppins-latin-400.5b8f3ba886526963a788.woff2) format("woff2"), url(/static/media/poppins-latin-400.c14093cee8c440c1884e.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 400;
+    src: local("Poppins Regular italic"), local("Poppins-Regularitalic"), url(/static/media/poppins-latin-400italic.15597034a671c979d13e.woff2) format("woff2"), url(/static/media/poppins-latin-400italic.b7d6c86bf88de93565a3.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Poppins Medium "), local("Poppins-Medium"), url(/static/media/poppins-latin-500.dc16a3592fdb61b620cc.woff2) format("woff2"), url(/static/media/poppins-latin-500.ff86872bdc62f119cb70.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 500;
+    src: local("Poppins Medium italic"), local("Poppins-Mediumitalic"), url(/static/media/poppins-latin-500italic.fbe8f8786ac1a355d1d0.woff2) format("woff2"), url(/static/media/poppins-latin-500italic.3dda6a60aa4d2acc26d9.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Poppins SemiBold "), local("Poppins-SemiBold"), url(/static/media/poppins-latin-600.e49343f0bcfb860280ab.woff2) format("woff2"), url(/static/media/poppins-latin-600.8c4516c52b9adc821643.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 600;
+    src: local("Poppins SemiBold italic"), local("Poppins-SemiBolditalic"), url(/static/media/poppins-latin-600italic.5530d5745f61ad5a084b.woff2) format("woff2"), url(/static/media/poppins-latin-600italic.8c85f26b213a50aaf21d.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Poppins Bold "), local("Poppins-Bold"), url(/static/media/poppins-latin-700.9690ce6275ddc5645cfa.woff2) format("woff2"), url(/static/media/poppins-latin-700.eb23bc4e632c6270a7f6.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 700;
+    src: local("Poppins Bold italic"), local("Poppins-Bolditalic"), url(/static/media/poppins-latin-700italic.bd8a2d380294e07559f8.woff2) format("woff2"), url(/static/media/poppins-latin-700italic.2c2e5a89b894602cb374.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    src: local("Poppins ExtraBold "), local("Poppins-ExtraBold"), url(/static/media/poppins-latin-800.8314fda16443ec0fff15.woff2) format("woff2"), url(/static/media/poppins-latin-800.2923e77ee4131a6bdf85.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 800;
+    src: local("Poppins ExtraBold italic"), local("Poppins-ExtraBolditalic"), url(/static/media/poppins-latin-800italic.5b40529f4fd710573bc9.woff2) format("woff2"), url(/static/media/poppins-latin-800italic.a7db6fce9e81a0a878af.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    src: local("Poppins Black "), local("Poppins-Black"), url(/static/media/poppins-latin-900.52f874769ced349a3130.woff2) format("woff2"), url(/static/media/poppins-latin-900.b71e24fd507f1d04de00.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 900;
+    src: local("Poppins Black italic"), local("Poppins-Blackitalic"), url(/static/media/poppins-latin-900italic.babad407b7e5b94a7e3a.woff2) format("woff2"), url(/static/media/poppins-latin-900italic.623b100a2c3d97062e94.woff) format("woff")
+}
+/*# sourceMappingURL=main.3d69f164.css.map*/
